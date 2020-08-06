@@ -349,6 +349,10 @@ html[dir='rtl'] .nav-li:last-of-type {
   }
 }
 
+.nav-li.active > .nav-a {
+  color: #af8344;
+}
+
 .nav-a {
   font-size: 18px;
   color: #333333;
@@ -397,7 +401,7 @@ html[dir='rtl'] .nav-li:last-of-type {
 .drop-ul {
   position: absolute;
   top: 100%;
-  width: 170px;
+  min-width: 170px;
   border-radius: 10px;
   background-color: #3c774f;
   padding: 13px 6px 14px;
@@ -464,6 +468,7 @@ html[dir='rtl'] .drop-ul {
   color: #9bd9af;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  white-space: nowrap;
 }
 
 .drop-ul .drop-a:focus {
@@ -1198,7 +1203,7 @@ html[dir='rtl'] .lang-cont .drop-lang {
   display: flex;
   padding-bottom: 4px;
   margin-bottom: 3px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -2777,7 +2782,7 @@ html[dir='rtl'] .close-btn {
   }
   nav .drop-ul {
     background-color: transparent;
-    width: 100%;
+    min-width: 100%;
     padding: 0 15px;
     visibility: visible;
     opacity: 1;
