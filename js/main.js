@@ -163,4 +163,23 @@ $(document).ready(function () {
             $(this).siblings().slideToggle(500);
         })
     }
+    ///////// **input file** /////////
+    $(".form-file").change(function () {
+        var file = $('.form-file')[0].files[0]
+        if (file) {
+            console.log($(".file-value").val(file.name));
+        }
+    });
+
+    ///////// **Select** /////////
+    if ($(window).width() > 991) {
+        $('.form-select').select2({
+            minimumResultsForSearch: Infinity,
+        });
+    }
+
+    if ($(window).width() <= 991) {
+        $(".form-select").addClass("mobile-select");
+        $(".form-select").wrap('<div class="mobile-select-cont"></div>');
+    }
 });
