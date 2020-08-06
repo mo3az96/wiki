@@ -645,8 +645,13 @@ html[dir='rtl'] .drop-ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 300px;
   margin: auto;
+}
+
+@media (max-width: 991px) {
+  .intiat {
+    max-width: 330px;
+  }
 }
 
 .intiat .intiat-img {
@@ -2973,6 +2978,114 @@ html[dir='rtl'] .contact-method .social-link:last-of-type {
   .forms-form .form-submit {
     margin: 25px auto 0;
   }
+}
+
+.intait-grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 50px 15px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+@media (min-width: 1500px) {
+  .intait-grid {
+    gap: 65px 30px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .intait-grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 50px 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .intait-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 40px 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .intait-grid {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    gap: 50px 30px;
+  }
+}
+
+.load-more-animate {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+
+.load-more-animate img {
+  width: 128px;
+}
+
+@media (max-width: 767px) {
+  .load-more-animate img {
+    width: 100px;
+  }
+}
+
+.load-more-animate div {
+  position: relative;
+  width: 128px;
+}
+
+@media (max-width: 767px) {
+  .load-more-animate div {
+    width: 100px;
+  }
+}
+
+.load-more-animate div .grey-cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.load-more-animate div .grey-cont img {
+  -webkit-filter: grayscale(75%);
+          filter: grayscale(75%);
+  opacity: 0.5;
+}
+
+.load-more-animate div .color-cont {
+  width: 0;
+  z-index: 2;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  overflow: hidden;
+  -webkit-animation: loader 8s ease infinite;
+  animation: loader 8s ease infinite;
+}
+
+.load-more-animate .load-text {
+  margin-top: 16px;
+  font-size: 16px;
+  color: #8a8a8a;
+  font-weight: 500;
 }
 
 .join-footer {
