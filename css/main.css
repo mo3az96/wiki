@@ -89,6 +89,16 @@ div[class$="-page"].contact-page {
   }
 }
 
+div[class$="-page"].partner-page {
+  padding-bottom: 50px;
+}
+
+@media (max-width: 991px) {
+  div[class$="-page"].partner-page {
+    padding-bottom: 30px;
+  }
+}
+
 @font-face {
   font-family: 'tajawal';
   src: url("../fonts/TAJAWAL/Tajawal-ExtraLight.woff2") format("woff2"), url("../fonts/TAJAWAL/Tajawal-ExtraLight.woff") format("woff"), url("../fonts/TAJAWAL/Tajawal-ExtraLight.ttf") format("truetype");
@@ -3231,6 +3241,53 @@ html[dir='rtl'] .intiat-page .list-item::before {
 
 @media (max-width: 991px) {
   .intiat-page .list-item {
+    font-size: 18px;
+  }
+}
+
+.partner-img {
+  padding: 0 15px;
+}
+
+@media (min-width: 1500px) {
+  .partner-img {
+    padding: 0 193px;
+  }
+}
+
+@media (max-width: 991px) {
+  .partner-img {
+    padding: 0;
+  }
+}
+
+.partner-ps {
+  text-align: center;
+  margin-top: 70px;
+}
+
+@media (min-width: 1500px) {
+  .partner-ps {
+    padding: 0 120px;
+  }
+}
+
+@media (max-width: 991px) {
+  .partner-ps {
+    margin-top: 40px;
+  }
+}
+
+.partner-p {
+  font-size: 22px;
+  color: #333333;
+  line-height: 1.545;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 991px) {
+  .partner-p {
+    margin-bottom: 20px;
     font-size: 18px;
   }
 }
