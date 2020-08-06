@@ -3113,6 +3113,128 @@ html[dir='rtl'] .contact-method .social-link:last-of-type {
   }
 }
 
+.single-intiat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-bottom: 83px;
+}
+
+@media (min-width: 1500px) {
+  .single-intiat {
+    padding: 0 120px;
+  }
+}
+
+@media (max-width: 991px) {
+  .single-intiat {
+    margin-bottom: 50px;
+  }
+}
+
+.single-intiat .single-intiat-img {
+  margin-bottom: 35px;
+}
+
+.single-intiat .single-intiat-text {
+  font-size: 22px;
+  color: #333333;
+  line-height: 1.545;
+}
+
+@media (max-width: 991px) {
+  .single-intiat .single-intiat-text {
+    font-size: 18px;
+  }
+}
+
+.intiat-page .mo-list {
+  margin-bottom: 60px;
+}
+
+@media (min-width: 1500px) {
+  .intiat-page .mo-list {
+    padding: 0 120px;
+  }
+}
+
+@media (max-width: 991px) {
+  .intiat-page .mo-list {
+    margin-bottom: 40px;
+  }
+}
+
+.intiat-page .mo-list:last-of-type {
+  margin-bottom: 0;
+}
+
+.intiat-page .list-head {
+  font-size: 24px;
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 991px) {
+  .intiat-page .list-head {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.intiat-page .list-item {
+  font-size: 20px;
+  color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.intiat-page .list-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.intiat-page .list-item::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f111";
+  font-size: 8px;
+  color: #2d703e;
+  margin-top: 9px;
+}
+
+html[dir='ltr'] .intiat-page .list-item::before {
+  margin-right: 20px;
+}
+
+html[lang='en-US'] .intiat-page .list-item::before {
+  margin-right: 20px;
+}
+
+html[dir='rtl'] .intiat-page .list-item::before {
+  margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+  .intiat-page .list-item {
+    font-size: 18px;
+  }
+}
+
 .join-footer {
   padding-top: 105px;
   padding-bottom: 85px;
