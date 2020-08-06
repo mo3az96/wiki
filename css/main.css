@@ -1397,6 +1397,8 @@ html[dir='rtl'] .img-div {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    width: 90%;
+    margin: auto;
   }
   html[dir='ltr'] .img-div {
     left: auto;
@@ -1408,9 +1410,8 @@ html[dir='rtl'] .img-div {
     right: auto;
   }
   .img-div img {
+    max-width: 100%;
     height: auto;
-    max-width: 90%;
-    margin: auto;
   }
 }
 
