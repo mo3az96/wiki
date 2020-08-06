@@ -1143,10 +1143,12 @@ html[dir='rtl'] .social-link:last-of-type {
   top: 100%;
   width: 120px;
   border-radius: 10px;
-  background-color: #3c774f;
+  background-color: #fff;
   padding: 6px;
   visibility: hidden;
   opacity: 0;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -1156,7 +1158,7 @@ html[dir='rtl'] .social-link:last-of-type {
   height: 0;
   border-style: solid;
   border-width: 0 6px 6px 6px;
-  border-color: transparent transparent #3c774f transparent;
+  border-color: transparent transparent #fff transparent;
   content: "";
   bottom: 100%;
   position: absolute;
@@ -1188,7 +1190,7 @@ html[dir='rtl'] .lang-cont .drop-lang {
 
 .lang-cont .drop-lang .lang-link {
   font-size: 15px;
-  color: #9bd9af;
+  color: #333333;
   padding: 0 14px;
   width: 100%;
   display: -webkit-box;
@@ -1212,7 +1214,7 @@ html[dir='rtl'] .lang-cont .drop-lang {
 }
 
 .lang-cont .drop-lang .lang-link:hover {
-  color: #fff;
+  color: #3c774f;
 }
 
 header {
@@ -2527,6 +2529,10 @@ html[dir='rtl'] .news-cont .social-link:last-of-type {
 @media (max-width: 1199px) {
   .last-footer .copyrights {
     margin-top: 20px;
+    text-align: center;
+  }
+  .last-footer .copyrights span {
+    display: block;
   }
 }
 
